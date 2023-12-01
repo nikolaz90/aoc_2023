@@ -4,7 +4,7 @@ class StringToDigitAdditionner
   end
 
   def sums
-    summed_up_numbers
+    @strings.map { |str| sum_numbers_to_i(str.scan(/\d/)) }
   end
 
   def total
@@ -12,10 +12,6 @@ class StringToDigitAdditionner
   end
 
   private
-
-  def summed_up_numbers
-    @strings.map { |str| sum_numbers_to_i(str.scan(/\d/)) }
-  end
 
   def sum_numbers_to_i(numbers_to_sum)
     (numbers_to_sum.first + numbers_to_sum.last).to_i
