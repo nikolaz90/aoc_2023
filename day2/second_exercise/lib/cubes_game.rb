@@ -7,4 +7,8 @@ class CubesGame
   def sum_ids_of_games_with_enough_cubes
     @games.sum_ids_of_possible_games
   end
+
+  def sum_powered_cubes
+    @games.necessary_amount_of_cubes_sum_powers
+  end
 end

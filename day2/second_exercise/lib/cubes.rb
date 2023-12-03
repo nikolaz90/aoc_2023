@@ -1,4 +1,6 @@
 class Cubes
+  attr_reader :amount, :color
+
   TOTAL_CUBES = {
     red: 12,
     green: 13,

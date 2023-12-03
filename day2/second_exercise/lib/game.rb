@@ -11,4 +11,8 @@ class Game
   end
 
   alias possible? possible_game?
+
+  def power_of_minimum_cubes_possible
+    @sets.power_of_minimum_cubes_possible
+  end
 end

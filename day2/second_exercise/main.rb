@@ -12,4 +12,5 @@ cube_game = CubesGame.new(data_set)
 
 puts 'Hello AoC !'.yellow
 puts "Totaled ids of possible games : #{cube_game.sum_ids_of_games_with_enough_cubes}".green
+puts "Totaled powers of minimum necessary cubes ! #{cube_game.sum_powered_cubes}".light_green
 puts 'Goodbye !'.yellow

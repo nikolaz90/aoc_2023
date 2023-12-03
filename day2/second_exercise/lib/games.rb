@@ -10,4 +10,8 @@ class Games
       acc
     end
   end
+
+  def necessary_amount_of_cubes_sum_powers
+    @games.map(&:power_of_minimum_cubes_possible).sum
+  end
 end
