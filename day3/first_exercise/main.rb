@@ -1,4 +1,4 @@
-require_relative 'schema'
+require_relative 'lib/schema'
 
 data_set = File.read('data/schema_data.txt')
 
