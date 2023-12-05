@@ -11,6 +11,20 @@ class Schema
     part_numbers.sum
   end
 
+  # def gear_numbers
+  #   gears_to_check = []
+  #   @schema.each_with_index do |line, li_index|
+  #     line.length.times do |ch_index|
+  #       if line[ch_index].match(/\*/)
+  #         binding.pry
+  #         sch_num = SchemaNumber.new([ch_index, li_index], @schema)
+  #         nums_to_check << sch_num.number.to_i if sch_num.part_number?
+  #       end
+  #     end
+  #   end
+  #   gears_to_check
+  # end
+
   private
 
   def part_numbers
